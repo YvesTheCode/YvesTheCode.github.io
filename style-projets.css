@@ -1,0 +1,63 @@
+main{width: 100%;
+height: 52%;
+display: flex;
+justify-content: space-between;}
+
+.coll{width: 18%;
+height: 119.3%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;}
+
+.projet{
+width: 100%;
+height: 62.1%;
+}
+
+.projet img{width: 100%;
+height: 100%;
+cursor: crosshair;}
+
+.button{background-color: transparent;
+color: white;
+font-size: 1.5625rem;
+font-family: monospace;
+height: 16%;
+width: 100%;
+cursor: crosshair;
+transition: 0.5s;}
+
+.button p {pointer-events: none;}
+
+.button:hover{color: #ff4d4d;}
+
+.coll-1{width: 29%;
+height: 119.3%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;}
+
+.coll-1 .projet{width: 62.1%;}
+
+#flemme{
+height: 16%;
+width: 62.1%;
+display: flex;
+align-items: center;
+justify-content: center;
+white-space: nowrap;}
+
+.imghover{object-fit: contain;
+object-position: center;
+max-width: 100%;
+height: 100%;
+transition: 0.5s;}
+
+.overflowhover{overflow: hidden;
+width: 100%;
+height: 100%;}
+
+.imghover:hover{
+    scale: 1.1;
+}

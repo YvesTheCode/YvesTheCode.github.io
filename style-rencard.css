@@ -1,0 +1,95 @@
+#button1{
+color: white;
+font-size: 1.5625rem;
+font-family: monospace;
+height: 20.7%;
+width: 18%;
+transition: 0.5s;
+cursor: crosshair;}
+
+#button1:hover{color: #ff4d4d;}
+
+main{width: 100%;
+height: 52%;
+display: flex;
+justify-content: space-between;}
+
+.coll-1{width: 29%;
+height: 126%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;}
+
+#ul{width: 50%;
+height:75% ;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+list-style-type: none;
+color:#ff4d4d;
+font-size: 1.375rem;
+padding: 1.4vh;}
+
+#ul li span{color: white;
+font-size: 1.5625rem;
+transition: 0.5s;}
+
+#ul li span:hover{cursor: crosshair;
+color: #ff4d4d;}
+
+#input{color: #ff4d4d;
+font-size: 1.375rem;
+width: fit-content;
+min-width: 50%;
+max-width: 100%;
+height: 16%;
+display: flex;
+align-items: center;
+padding: 1.4vh;}
+
+#input p {overflow: hidden;}
+
+#input p span{color: white;
+font-size: 1.5625rem;
+white-space: nowrap;}
+
+#submit1:hover{cursor: crosshair;
+color: #ff4d4d;
+transition: 0.5s;}
+
+#submit2:hover{cursor: crosshair;
+color: #ff4d4d;
+transition: 0.5s;}
+
+#historique{width: 18%;
+height: 163%;
+padding: 1.4vh;
+font-size: 1.375rem;;
+color: #ff4d4d;}
+
+#historique p span{color: white;
+line-height: 4vh;
+font-size: 1.5625rem;}
+
+#historique p span:hover{
+cursor: crosshair;
+color: #ff4d4d;
+transition: 0.5s;
+}
+
+.style-code{background-color: #1e1e1e;}
+
+#video{position: fixed;
+width: 100%;
+height: 100vh;
+z-index: -50;
+display: flex;
+align-items: start;
+justify-content: center;}
+
+#video img{position: absolute;}
+
+#videfond{height: 85.6%;
+top: 2%;}
+
+#videmoi{height: 73%;}

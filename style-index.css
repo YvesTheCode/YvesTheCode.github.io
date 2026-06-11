@@ -1,0 +1,68 @@
+main{width: 100%;
+height: 52%;
+display: flex;
+justify-content: space-between;}
+
+#h1{font-size: 8rem;
+color: #ff4d4d;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 29%;
+height: 119.3%;
+text-align: center;}
+
+#mise-a-jour{width:22% ;
+height: 119.3%;
+padding: 1.4vh;}
+
+#mise-a-jour p {color: white;
+font-size: 1.375rem;
+pointer-events: none;}
+
+.coll-3{width: 18%;
+height: 119.3%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;}
+
+#projet-recent{
+width: 100%;
+height: 62.1%;
+cursor: crosshair;
+}
+
+#derniere-ajout{
+width: 18%;
+height: 74%;
+cursor: crosshair;
+}
+
+.imghover{object-fit: contain;
+object-position: center;
+width: 100%;
+height: 100%;
+transition: 0.5s;}
+
+.overflowhover{overflow: hidden;
+width: 100%;
+height: 100%;
+}
+
+#vers-projet{background-color: transparent;
+color: white;
+font-size: 1.5625rem;
+font-family: monospace;
+height: 16%;
+width: 100%;
+cursor: crosshair;
+transition: 0.5s;}
+
+#vers-projet p {pointer-events: none;}
+
+#vers-projet:hover{color: #ff4d4d;}
+
+.imghover:hover{
+    scale: 1.1;
+}
+

@@ -1,0 +1,282 @@
+{
+  "yves": {
+    "enter": {
+      "text": "Je te jure, je ressemble plus ou moins à ça en vrai...",
+      "moigif": "baka.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "mise-a-jour": {
+    "enter": {
+      "text": "Voici ce qu'il y a de nouveau dans le site ! Un tas de choses sont encore à implémenter pour rendre le site encore plus interactif et incroyable.",
+      "moigif": "erm.gif" 
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "vers-projet": {
+    "enter": {
+      "text": "Si tu veux aller voir tous mes projets, c'est par ici.",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "projet-recentbla": {
+    "enter": {
+      "text": "Le projet le plus récent qui mérite particulièrement ton attention !",
+      "moigif": "pouce.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "derniere-ajoutbla": {
+    "enter": {
+      "text": "Voilà le dernier projet que j'ai rajouté dans le site, si tu ne le reconnais pas il y a sûrement des nouveautés.",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "email": {
+    "enter": {
+      "text": "Si vous voulez être sur que je vous réponde, envoyez moi un mail !",
+      "moigif": "pouce.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "numero": {
+    "enter": {
+      "text": "Sachez que passer des appels téléphonique me remplie d'anxiété donc privilégié les messages svp.",
+      "moigif": "baka.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "linkedin": {
+    "enter": {
+      "text": "J'y suis pas très actif, c'est pas vraiment ma vibe, mais si ça peut vous faire plaisir...",
+      "moigif": "barbiche.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "github": {
+    "enter": {
+      "text": "C'est là-bas que vous pouvez télécharger et tester mes site par vous même !",
+      "moigif": "erm.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "insta": {
+    "enter": {
+      "text": "Ce compte est mort pour l'instant, ne me contacter pas là-bas. Pourquoi je l'ai mit alors qu'il ne sert a rien ? JE T'EN POSE MOI DES QUESTIONS ?",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "carouselbla": {
+    "enter": {
+      "text": "Il est jolie mon carousel, hein ?",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "flemme": {
+    "enter": {
+      "text": "Si mon site te donne mal à la tête ou que t'as la flemme de le parcourir, tu peux aller sur mon OneDrive avec mon CV et une poignée de projets dedans",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "testyap": {
+    "enter": {
+      "text": "pidapi dapidadodo pidapidido",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_biere_yap": {
+    "enter": {
+      "text": "J’ai fait la mise en page d’une étiquette de bière pour le camp scout d’un ami. (Je n’ai pas fait la super illustration centrale.)",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_igor_yap": {
+    "enter": {
+      "text": "Un grand merci à Igor Bonaparte qui, pendant qu’il portait fièrement le t-shirt que j’ai designé, est tombé, ce qui l’a décapité sur le moment. Heureusement, aujourd’hui, il s’en est remis !",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_photomort_yap": {
+    "enter": {
+      "text": "L’exercice était de faire des photos dans le style de Minkkinen… Bizarrement, moi sous un éboulement n’ai pas été retenu.",
+      "moigif": "barbiche.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_leboihallo_yap": {
+    "enter": {
+      "text": "Toute mascotte d’huile se doit d’avoir sa version ~spooky~ !",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_imposteur_yap": {
+    "enter": {
+      "text": "Meilleur personnage de l’anime, je veux rien savoir.",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "video_soiree_yap": {
+    "enter": {
+      "text": "Ceci est de loin ma meilleure mauvaise idée que j’aie jamais eue pour un devoir coté. (J’ai eu la note maximale)",
+      "moigif": "ababravo.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_vegan1_yap": {
+    "enter": {
+      "text": "C’est le logo d’une application pour trouver des restaurants végan.",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_vegan2_yap": {
+    "enter": {
+      "text": "Et ça, c’est le design system qui va avec.",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_fruit_yap": {
+    "enter": {
+      "text": "On nous a demandé de faire une affiche pour un fruit sans jamais le nommer directement. Donc, bien évidemment, j’ai choisi un fruit plus connu comme étant un légume ! (Oui, j’aime être compliqué et différent.)",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_bozar_yap": {
+    "enter": {
+      "text": "Mon affiche au Bozar (c’est faux, mais tkt)",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_wok1_yap": {
+    "enter": {
+      "text": "Petite couverture de livre de cuisine faite avec Photoshop et dans un temps très limité. (Celle-ci directement inspirée de l’Arche de Noé)",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_wok2_yap": {
+    "enter": {
+      "text": "Petite couverture de livre de cuisine faite avec Photoshop, un scanner et un temps très limité. (Celle-ci avec un titre fait sur papier puis scanner)",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_leboi_yap": {
+    "enter": {
+      "text": "Toute marque d’huile se doit d’avoir une mascotte trop ~cute~",
+      "moigif": "yap.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_cougar1_yap": {
+    "enter": {
+      "text": "On a tous tiré un animal spirituel aléatoire pour en faire une carte de tarot. Je suis bien sûr tombé sur la cougar, je ne sais pas comment le prendre mais ça me fait rire.",
+      "moigif": "barbiche.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  },
+  "img_cougar2_yap": {
+    "enter": {
+      "text": "On a tous tiré un animal spirituel aléatoire pour en faire une carte de tarot. Je suis bien sûr tombé sur la cougar, je ne sais pas comment le prendre mais ça me fait rire.",
+      "moigif": "barbiche.gif"
+    },
+    "leave": {
+      "text": "",
+      "moigif": "pasbla.png"
+    }
+  }
+}
