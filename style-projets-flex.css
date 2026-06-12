@@ -48,7 +48,7 @@ height: 93%;
 padding:1% ;
 overflow-wrap: break-word;
 color: white;
-font-size: 1rem;
+font-size: 1.2rem;
 display: flex;
 justify-content: space-between;
 flex-direction: column;
@@ -60,7 +60,7 @@ flex-direction: column;
 }
 
 .navprojet span {
-    font-size: 1.5625rem;
+    font-size: 2rem;
     color: white;
     cursor: crosshair;
     text-decoration: none;

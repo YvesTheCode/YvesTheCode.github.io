@@ -1,27 +1,24 @@
 {
-  "projet1": {
-    "texte": "Sips VI, collaboration fictive entre Will Wood et Vivienne Westwood <br><br>Réalisé : 2022 - INRACI<br><br>Logiciels utilisés : Photoshop, Illustrator, InDesign, VSCode<br>État : FINI<br><br>Retrouvez la note d'intention complète et plus <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/Eur10x7SBUJOohc5oOG7aY8B-c_ZyCwiPkwCetVcipy0Tw' target='_blank'>ICI</a>"
+  "projet8": {
+    "texte": "Medley de projets créer pour l'INRACI<br><br>Réalisé : 2018 - 2022"
   },
-  "projet2": {
-    "texte": "Site internet interactif et naratif<br><br>Réalisé : V1 : 2023 - HEFF / V2 : 2024 - Ajd<br><br>Logiciels utilisés : VSCode, Illustrator, Figma<br><br>État : INCOMPLET"
+  "projet5": {
+    "texte": "Sips III, création d'une identité graphique et de plusieurs designs pour le groupe Efterklang<br><br>Réalisé : 2021 - INRACI<br><br>Logiciels utilisés : Illustrator, InDesign, VS Code<br><br>État : FINI<br><br>Retrouve la note d’intention complète <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/EobJ5FtwHddHgZ3DnTy_wxcB93S60Lvbf1q7MIp420Df2Q' target='_blank'>ICI</a>"
+  },
+  "projet6": {
+    "texte": "Sips V, création d'une identité graphique et de plusieurs designs pour le projet Végécan<br><br>Réalisé : 2022 - INRACI<br><br>Logiciels utilisés : Illustrator, InDesign, VS Code, Dimension<br><br>État : FINI<br><br>Retrouve la note d’intention complète <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/Eil6HZCjg3ZClWMSZULHYxkBAGR3l6uS2PXvEcEjCAizSA' target='_blank'>ICI</a>"
+  },
+  "projet7": {
+    "texte": "Jeu de cartes dérivé du loup-garou basé sur l'univers de Monogatari<br><br>Réalisé : 2022<br><br>Logiciel utilisé : Illustrator<br><br>État : FINI<br><br>Retrouve les règles et les cartes à imprimer <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/EocUa36Lm3lKrcHECzGnaTMBm9WhI8SMAB9j1vmtEiWCMA' target='_blank'>ICI</a>"
+  },
+  "projet1": {
+    "texte": "Sips VI, collaboration fictive entre Will Wood et Vivienne Westwood <br><br>Réalisé : 2022 - INRACI<br><br>Logiciels utilisés : Photoshop, Illustrator, InDesign, VSCode<br><br>État : FINI<br><br>Retrouve la note d'intention complète et plus <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/Eur10x7SBUJOohc5oOG7aY8B-c_ZyCwiPkwCetVcipy0Tw' target='_blank'>ICI</a>"
   },
   "projet3": {
     "texte": "Medley de projets perso<br><br>Réalisé : Depuis toujours - tout le temps - partout"
   },
-  "projet4": {
-    "texte": "Jeu de cartes dans un style cartoonesque<br><br>Réalisé : 2025<br><br>Logiciels utilisés : Krita, Illustrator, InDesign<br><br>État : EN COURS"
-  },
-  "projet5": {
-    "texte": "Sips III, création d'une identité graphique et de plusieurs designs pour le groupe Efterklang<br><br>Réalisé : 2021 - INRACI<br><br>Logiciels utilisés : Illustrator, InDesign, VS Code<br><br>État : FINI<br><br>Retrouvez la note d’intention complète <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/EobJ5FtwHddHgZ3DnTy_wxcB93S60Lvbf1q7MIp420Df2Q' target='_blank'>ICI</a>"
-  },
-  "projet6": {
-    "texte": "Sips V, création d'une identité graphique et de plusieurs designs pour le projet Végécan<br><br>Réalisé : 2022 - INRACI<br><br>Logiciels utilisés : Illustrator, InDesign, VS Code, Dimension<br><br>État : FINI<br><br>Retrouvez la note d’intention complète <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/Eil6HZCjg3ZClWMSZULHYxkBAGR3l6uS2PXvEcEjCAizSA' target='_blank'>ICI</a>"
-  },
-  "projet7": {
-    "texte": "Jeu de cartes dérivé du loup-garou basé sur l'univers de Monogatari<br><br>Réalisé : 2022<br><br>Logiciel utilisé : Illustrator<br><br>État : FINI<br><br>Retrouvez les règles et les cartes à imprimer <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/EocUa36Lm3lKrcHECzGnaTMBm9WhI8SMAB9j1vmtEiWCMA' target='_blank'>ICI</a>"
-  },
-  "projet8": {
-    "texte": "Medley de projets créer pour l'INRACI<br><br>Réalisé : 2018 - 2022"
+  "projet11": {
+    "texte": "Medley de projets créer pour l'Heff<br><br>Réalisé : 2022 - 2023"
   },
   "projet9": {
     "texte": "Fascicule s'inspirant de trois styles musicaux (au choix, on se doute bien)<br><br>Réalisé : 2023 - Heff<br><br>Logiciel utilisé : InDesign<br><br>État : FINI"
@@ -29,17 +26,20 @@
   "projet10": {
     "texte": "Logo, affiche et posts sur les réseaux pour l’ASBL RéCI (dans le cadre d’un exercice à Heff)<br><br>Réalisé : 2023 - Heff<br><br>Logiciel utilisé : Illustrator<br><br>État : FINI"
   },
-  "projet11": {
-    "texte": "Medley de projets créer pour l'Heff<br><br>Réalisé : 2022 - 2023"
-  },
-  "projet12": {
-    "texte": "Site où l'on doit deviner des chiffres entre 1 et 100 et qui va devenir un jeu d'horreur<br><br>Réalisé : V0 : 2024 - EFP / V1 : 2025 - Ajd<br><br>Logiciels utilisés : VS Code, Krita<br><br>État : INCOMPLET<br><br>Jouez à la V1 du jeu <a class='hover-boop' href='https://github.com/YvesTheCode/G.O.Devinette_V1.git' target='_blank'>ICI</a>"
-  },
-  "projet13": {
-    "texte": "Redesign d'un site web ayant existé avec une approche d'UX/UI designer<br><br>Réalisé : 2025 - EFP<br><br>Logiciel utilisé : Figma<br><br>État : FINI<br><br>Retrouvez le cahier des charges complet <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/ElmW8IcN8NdIjGgv7hdQ1vQBTP4YdY2KtAManjiG6sYOeA' target='_blank'>ICI</a>"
+  "projet2": {
+    "texte": "Site internet interactif et naratif<br><br>Réalisé : V1 : 2023 - HEFF / V2 : 2024 - Ajd<br><br>Logiciels utilisés : VSCode, Illustrator, Figma<br><br>État : INCOMPLET"
   },
   "projet14": {
     "texte": "Medley de projets créer pour l'EFP <br><br>Réalisé : 2024 - 2025"
+  },
+  "projet12": {
+    "texte": "Site où l'on doit deviner des chiffres entre 1 et 100 et qui va devenir un jeu d'horreur<br><br>Réalisé : V0 : 2024 - EFP / V1 : 2025 - Ajd<br><br>Logiciels utilisés : VS Code, Krita<br><br>État : INCOMPLET<br><br>Joue à la V1 du jeu <a class='hover-boop' href='https://github.com/YvesTheCode/G.O.Devinette_V1.git' target='_blank'>ICI</a>"
+  },
+  "projet13": {
+    "texte": "Redesign d'un site web ayant existé avec une approche d'UX/UI designer<br><br>Réalisé : 2025 - EFP<br><br>Logiciel utilisé : Figma<br><br>État : FINI<br><br>Retrouve le cahier des charges complet <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/ElmW8IcN8NdIjGgv7hdQ1vQBTP4YdY2KtAManjiG6sYOeA' target='_blank'>ICI</a>"
+  },
+  "projet4": {
+    "texte": "Jeu de cartes dans un style cartoonesque<br><br>Réalisé : 2025<br><br>Logiciels utilisés : Krita, Illustrator, InDesign<br><br>État : EN COURS"
   },
   "projet15": {
     "texte": "Fangame FNAF fait en HTML, CSS et JS<br><br>Réalisé : 2025<br><br>Logiciels utilisés : VS Code, Paint<br><br>État : INCOMPLET<br><br>"
@@ -48,6 +48,6 @@
     "texte": "Petit design système et logo pour des posts Instagram<br><br>Réalisé : 2025<br><br>Logiciels utilisés : Canva, Figma, Illustrator<br><br>État : FINI"
   },
   "projet17": {
-    "texte": "Jeu de soirée bien bordelique<br><br>Réalisé : 2026<br><br>Logiciels utilisés : Figma, Krita<br><br>État : FINI<br><br>Retrouvez les règles et les cartes à imprimer <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/IgCk6P1mAkkIQKkSoP5AD5saAZpncrT3UxO9RTkBi0H3JVI' target='_blank'>ICI</a>"
+    "texte": "Jeu de soirée bien bordelique<br><br>Réalisé : 2026<br><br>Logiciels utilisés : Figma, Krita<br><br>État : FINI<br><br>Retrouve les règles et les cartes à imprimer <a class='hover-boop' href='https://1drv.ms/f/c/6dec6061a73aae5b/IgCk6P1mAkkIQKkSoP5AD5saAZpncrT3UxO9RTkBi0H3JVI' target='_blank'>ICI</a>"
   }
 }

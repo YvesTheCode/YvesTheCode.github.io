@@ -1,18 +1,23 @@
 document.querySelectorAll(".hover-boop").forEach(el => {
   let audio;
-
+  let audiotimeout
   el.addEventListener("mouseenter", () => {
     audio = new Audio('bruit/2039.mp3');
     audio.currentTime = 0;
     audio.volume = 0.1
-    audio.play().catch(err => {
+    audiotimeout = setTimeout(() => {
+          audio.play().catch(err => {
     });
+    }, 100);
+
   });
 
   el.addEventListener("mouseleave", () => {
     if (audio) {
-      audio.pause();      
+      clearTimeout(audiotimeout)
       audio.currentTime = 0;
+      audio.pause();      
+      
     }
 
   });
