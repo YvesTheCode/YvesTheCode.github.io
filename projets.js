@@ -28,6 +28,20 @@ let i = 4
 
 function update_projets(ind) {
 
+    if (i == (projets.length - 3)) {
+        buttplus.textContent = "Loop >>>"
+    }
+    else{
+        buttplus.textContent = "Plus récent >>>"
+    }
+
+    if (i == 0) {
+        buttmoin.textContent = "<<< Loop "
+    }
+    else{
+        buttmoin.textContent = "<<< Plus ancien"
+    }
+
     if (ind<=(projets.length)-3 && ind>=0) {
 
         case1.children[0].textContent="<"+projets[ind].titre+">"
@@ -64,6 +78,7 @@ update_projets(i)
 
 buttplus.addEventListener('click',function () {
    ++i
+
    update_projets(i)
 })
 

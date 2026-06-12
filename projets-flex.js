@@ -66,6 +66,15 @@ let projetsTextes = [
 
 
 function pop(meme) {
+
+  if (memory == 0){
+    minus.textContent = "<<< Loop"
+  }
+
+  if (memory == (projet_img.length -1)){
+    plus.textContent = "Loop >>>"
+  }
+
   const images = Object.entries(projet_img[meme]);
 
   reponsetxt.innerHTML = projetsTextes[meme]
@@ -249,6 +258,7 @@ minus.addEventListener('click',function () {
   --memory
 
   // alert(memory)
+
   if (memory<0) {
     memory = projet_img.length-1
   }
