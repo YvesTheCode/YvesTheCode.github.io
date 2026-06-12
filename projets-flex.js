@@ -155,61 +155,57 @@ let now = -1
 pop(memory)
 
 
-    document.querySelectorAll(".zoom-img").forEach(zoom => {
+document.querySelectorAll(".zoom-img").forEach(zoom => {
 
-      zoom.addEventListener("click", () => {
+  zoom.addEventListener("click", () => {
+    
+    const zoomchild = zoom.querySelector("img")
+    main.style.pointerEvents = "none"
+    zoomimg.src = zoomchild.src
+    zoomall.style.display = "flex"
+    zoomall.style.pointerEvents = "visible"
+    zoomdiv.style.scale = 0.9
+    setTimeout(() => {
+      zoomdiv.style.scale = 1
+    }, 50);
 
-      const zoomchild = zoom.querySelector("img")
-      main.style.pointerEvents = "none"
-      zoomimg.src = zoomchild.src
-      zoomall.style.display = "flex"
-      zoomall.style.pointerEvents = "visible"
+    // now = Object.keys(projet_img).indexOf(zoomchild.parentElement.id)
+      
+    if (zoomchild.parentElement.id in projet_img[memory]) {
+      now = Object.keys(projet_img[memory]).indexOf(zoomchild.parentElement.id);
+    }
+
+});
+
+zoomout.addEventListener('click',function () {
+      now = -1
       zoomdiv.style.scale = 0.9
       setTimeout(() => {
-        zoomdiv.style.scale = 1
-      }, 50);
+        main.style.pointerEvents = "all"
+        zoomall.style.display = "none"
+        zoomall.style.pointerEvents = "none"
+      }, 250);
 
-      // now = Object.keys(projet_img).indexOf(zoomchild.parentElement.id)
-      
-      if (zoomchild.parentElement.id in projet_img[memory]) {
-      let now = Object.keys(projet_img[memory]).indexOf(zoomchild.parentElement.id);
-        console.log(now)
-      }
-      
-      
+    })
 
-      zoomout.addEventListener('click',function () {
-        zoomdiv.style.scale = 0.9
-        now = -1
-        setTimeout(() => {
-          main.style.pointerEvents = "all"
-          zoomall.style.display = "none"
-          zoomall.style.pointerEvents = "none"
-        }, 250);
+})
 
-      })
+zoomdiv.addEventListener('click',function () {
 
-      })
 
-    });
-
-    zoomdiv.addEventListener('click',function () {
-        const images = Object.values(projet_img[memory]).filter(file =>
-          file.endsWith(".jpg") ||
-          file.endsWith(".png") ||
-          file.endsWith(".gif") ||
-          file.endsWith(".jpeg") ||
-          file.endsWith(".webp"));
-
-        if (now >= ((images.length)-1)) {
+        if (now >= ((Object.values(projet_img[memory]).length)-1)) {
           now = -1
+          console.log('wsh')
         }
 
-        zoomimg.src = "projet-img/"+images[++now]
+        if (!Object.values(projet_img[memory])[now+1].match(/\.(jpg|jpeg|png|gif|webp|svg)$/i)) {
+          alert('merde')
+          now++
+        }
 
+        zoomimg.src = "projet-img/"+Object.values(projet_img[memory])[++now]
 
-
-      })
+      });
 
 let desc = {};
 let descun = document.getElementById("desc")
