@@ -56,6 +56,8 @@ cursor: help;}
 #nav p{font-size: 1.375rem;
 color: #ff4d4d;}
 
+.pagenow{color: #ff4d4d;}
+
 #nav a {font-size: 1.5625rem;
 color: white;
 cursor: crosshair;
@@ -149,7 +151,6 @@ font-size: 1.2rem;}
     bottom: clamp(-9px, -1vh, -5px);
     right: 0.2vw;
 }
-
 
 ::-webkit-scrollbar {
   width: 12px; /* verticale */
