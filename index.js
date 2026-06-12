@@ -26,7 +26,7 @@ gorecent.addEventListener('click', function() {
 gonouveau.addEventListener('click', function() {
     sessionStorage.removeItem("memory");
 
-    sessionStorage.setItem("memory",15)
+    sessionStorage.setItem("memory",16)
     window.location.assign("projets-flex.html");
 })
 

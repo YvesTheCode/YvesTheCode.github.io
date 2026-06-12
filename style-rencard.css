@@ -93,3 +93,20 @@ justify-content: center;}
 top: 2%;}
 
 #videmoi{height: 73%;}
+#indic{font-size: 1.2rem;
+color: white;
+opacity: 0.4;
+position: absolute;
+bottom: 6%;
+right: 2%;
+animation-name: clignote;
+animation-duration: 1.1s;
+animation-iteration-count: infinite;
+display: none;
+}
+
+@keyframes clignote {
+    0% {opacity: 0.4;}
+    50% {opacity: 0.9;}
+    100% {opacity: 0.4;}
+}

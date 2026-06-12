@@ -8,13 +8,14 @@ let historique = document.getElementById("histoire")
 let passe = document.getElementById("dialogue")
 
 let videmoi = document.getElementById("videmoi")
+let indicpass = document.getElementById("indic")
 
 historique.innerHTML = sessionStorage.getItem("histHTML") || "";
 
 let questionmemo = ""
 let codereponse = ""
 
-let mots = ["es","tu","qui","que","quoi","veux","fais","crées","où","de","ours","fichtre"]
+let mots = ["es","tu","qui","que","quoi","veux","fais","crées·er","où","de","ours","fichtre"]
         //   0     1    2     3     4      5      6       7      8   9
 
 
@@ -23,6 +24,7 @@ let randomarray = 0;
 let memoyap = 0;
 let intervalId = null;
 let forgor = false
+let timeoutclong
 
 
 function tapetxt() {
@@ -35,6 +37,8 @@ function tapetxt() {
   let i = 0;
 
   videmoi.src = "img-pp/rencardyap.gif"
+  indicpass.style.display = "none"
+
   intervalId = setInterval(() => {
     if (i < texte.length) {
       textmemo += texte.charAt(i);
@@ -42,6 +46,10 @@ function tapetxt() {
       i++;
       reponsetxt.textContent += "▮"
     } else {
+      indicpass.style.display = "block"
+      timeoutclong = setTimeout(() => {
+        videmoi.src = "img-pp/rencard.png"
+      }, 2100);
       clearInterval(intervalId);
     }
   }, 10)
@@ -51,6 +59,8 @@ function tapetxt() {
 entre.addEventListener("click", function() {
 
   questiontxt.textContent = "...?"
+  indicpass.style.display = "none"
+  clearTimeout(timeoutclong)
 
   questionTrouvee = questcool.find(q => q.id.includes(codereponse)); 
 
@@ -59,6 +69,7 @@ entre.addEventListener("click", function() {
   codereponse = ""
 
   if (!questionTrouvee) {
+    videmoi.src = "img-pp/rencard.png"
     reponsetxt.textContent = "Parle bien par contre"
     return
   };
@@ -78,6 +89,8 @@ entre.addEventListener("click", function() {
 
 passe.addEventListener("click", function() {
   
+  clearTimeout(timeoutclong)
+
   if (!questionTrouvee) {
     reponsetxt.style.fontSize = "1.2rem"
     reponsetxt.textContent = "Si tu veux en apprendre plus sur moi, n'hésite pas à me poser des questions avec les mots et le bouton 'Submit' à gauche. Si tu souhaites réentendre ma réponse, il y a un historique à droite. Et si t'as vraiment la flemme, il y a un bouton en bas à droite pour aller droit au but (mais certaines réponses resteront cachées <3)."
@@ -92,6 +105,7 @@ passe.addEventListener("click", function() {
   }
 
   else{
+    indicpass.style.display = "none"
     reponsetxt.style.fontSize = "2rem"
     reponsetxt.textContent = "Vas-y pose moi une autre question ~~"
     videmoi.src = "img-pp/rencard.png"
@@ -197,13 +211,13 @@ let questcool = [
   },
   {
     "id": ["3517", "1574"],
-    "question": ["que veux tu crées", "tu veux crées quoi"],
+    "question": ["que veux tu créer", "tu veux créer quoi"],
     "reponse": [["J'aimerais créer des œuvres dont je pourrais être fier de montrer et qui pourraient rassasier mon envie de m'exprimer créativement.", "Et un jour, au sommet de ma GLOIRE, je créerai mon EMPIRE !", "Mais ce n'est pas pour tout de suite, je ne suis pas pressé."]],
     "blocked": false
   },
   {
     "id": ["8517", "9517","15798"],
-    "question": ["où veux tu crées", "de où veux tu crées","tu veux crées de où"],
+    "question": ["où veux tu créer", "de où veux tu créer","tu veux créer de où"],
     "reponse": [["Dans une entreprise où j'aurais l'opportunité et les moyens de mettre mes compétences en action", "Que ce soit dans l'infographie, le web design ou le développement.", "Si possible à Bruxelles", "Et ce serait cool d'être payé aussi.", "Mais je peux aussi créer depuis chez moi si le poste est en distanciel ou si c'est pour un client particulier."]],
     "blocked": false
   },
@@ -235,6 +249,12 @@ let questcool = [
     "id": ["01215"],
     "question": ["es tu ..."],
     "reponse": [["Pas vraiment… mais je travaille dessus","Un jour je serai meilleur","Un jour je serai ▮▮▮▮."]],
+    "blocked": true
+  },
+  {
+    "id": ["157", "17"],
+    "question": ["tu veux crées","tu crées"],
+    "reponse": [["Eeeeh oui ? Ça dépend quoi je suppose..."]],
     "blocked": true
   },
   {
@@ -280,6 +300,8 @@ historique.addEventListener("click", function(event) {
     console.log("Bouton historique cliqué :", idClique);
     forgor = true
     videmoi.src = "img-pp/rencard.png"
+    indicpass.style.display = "none"
+    clearTimeout(timeoutclong)
     clearInterval(intervalId);
     reponsetxt.style.fontSize = "1.2rem"
     // Cherche l’objet dans questcool où idClique correspond à un des ids
