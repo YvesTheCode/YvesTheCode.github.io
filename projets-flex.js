@@ -16,7 +16,7 @@ let projet_img = [
     { img_bozar_yap:"bozar.jpg", img_wok1_yap:"wok1.jpg", img_wok2_yap:"wok2.jpg", img4:"gatekeeper.jpg", img5:"iceberg.jpg", img_leboi_yap:"huile2.png", img_cougar1_yap:"cougare1.jpg", img_cougar2_yap:"cougare2.jpg" },
     { img:"ecoutep1.jpg", img2:"ecoutep2.jpg", img3:"ecoutep3.jpg", img4:"ecoutep4.jpg" },
     { img:"recilogo.jpg", img2:"reciaffiche.jpg", img3:"reciposte.jpg", img4:"recibrochure.jpg" },
-    { img:"lyxv2loop.gif", video:"lyxv2.mp4" }, 
+    { img:"lyxv2loop.gif", video:"lyxv2.mp4", }, 
     { img_fruit_yap:"fruit.jpg", img_vegan1_yap:"veganlogo.jpg", img_vegan2_yap:"veganchart.jpg" }, 
     { img:"godscreen1.jpg" },
     { img:"moustachecahierp1.jpg", img2:"moustachecahierp2.jpg", img3:"moustachecahierp3.jpg", img4:"moustacheproto1.jpg", img5:"moustacheproto2.jpg" },
@@ -192,16 +192,21 @@ zoomout.addEventListener('click',function () {
 
 zoomdiv.addEventListener('click',function () {
 
+        if ((now < ((Object.values(projet_img[memory]).length)-1))) {
+          if (!Object.values(projet_img[memory])[now+1].match(/\.(jpg|jpeg|png|gif|webp|svg)$/i)) {
+            now++
+          }
+        }
 
         if (now >= ((Object.values(projet_img[memory]).length)-1)) {
           now = -1
-          console.log('wsh')
+          if (!Object.values(projet_img[memory])[now+1].match(/\.(jpg|jpeg|png|gif|webp|svg)$/i)) {
+            now++
+          }
+          
         }
 
-        if (!Object.values(projet_img[memory])[now+1].match(/\.(jpg|jpeg|png|gif|webp|svg)$/i)) {
-          alert('merde')
-          now++
-        }
+        
 
         zoomimg.src = "projet-img/"+Object.values(projet_img[memory])[++now]
 
