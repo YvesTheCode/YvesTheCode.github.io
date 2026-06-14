@@ -246,8 +246,8 @@ let questcool = [
     "blocked": true
   },
   {
-    "id": ["152"],
-    "question": ["tu veux qui"],
+    "id": ["152", "215", "251"],
+    "question": ["tu veux qui", "qui tu veux", "qui veux tu"],
     "reponse": [["Je veux Dr Who dans Overwatch."]],
     "blocked": true
   },
@@ -264,7 +264,7 @@ let questcool = [
     "blocked": true
   },
   {
-    "id": ["157", "17", "517"],
+    "id": ["157", "17", "517", "71"],
     "question": ["tu veux crées","tu crées", "veux tu créer"],
     "reponse": [["Eeeeh oui ? Ça dépend quoi je suppose..."]],
     "blocked": true
