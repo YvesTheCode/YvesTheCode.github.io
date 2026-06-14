@@ -137,9 +137,8 @@ mots.forEach((id, index) => {
 
 
 
-let dejahist = 0
 
-
+let comptehist = sessionStorage.getItem("contehist") || 0;
 
 function history(parahist, i) {
   if (!document.getElementById(parahist)) {
@@ -152,6 +151,13 @@ function history(parahist, i) {
     historique.appendChild(hist);
     historique.appendChild(histbr);
     sessionStorage.setItem("histHTML", historique.innerHTML);
+    comptehist++
+    sessionStorage.setItem("contehist",comptehist)
+    console.log("Nombre de question trouvées : "+comptehist+"/"+questcool.length)
+    if (comptehist==questcool.length) {
+      console.log("Si tu lis ce message, c'est que tu dois être investi alors je vais te partager un petit secret. Si tu veux en savoir plus sur qui je crée et voir plus de dessins à moi, va sur le seul compte que mon compte Instagram suit. Par contre ne descends pas trop, c'était un compte de pur shitpost avant et ya des trucs louches qui traînent...")
+    }
+
   }
 }
 
@@ -216,8 +222,8 @@ let questcool = [
     "blocked": false
   },
   {
-    "id": ["8517", "9517","15798"],
-    "question": ["où veux tu créer", "de où veux tu créer","tu veux créer de où"],
+    "id": ["8517", "98517","15798", "1578"],
+    "question": ["où veux tu créer", "de où veux tu créer","tu veux créer de où", "tu veux créer où"],
     "reponse": [["Dans une entreprise où j'aurais l'opportunité et les moyens de mettre mes compétences en action", "Que ce soit dans l'infographie, le web design ou le développement.", "Si possible à Bruxelles", "Et ce serait cool d'être payé aussi.", "Mais je peux aussi créer depuis chez moi si le poste est en distanciel ou si c'est pour un client particulier."]],
     "blocked": false
   },
@@ -234,26 +240,32 @@ let questcool = [
     "blocked": false
   },
   {
+    "id": ["1572", "2517", "172", "271"],
+    "question": ["tu veux créer qui", "qui veux tu créer", "tu crées qui", "qui crées tu"],
+    "reponse":[["Mmmmmmmmh, je dirais Yves.", "Je peux pas me créer depuis zéro pour des raisons évidentes, donc ça veut dire...", "Que tout ce que je peux faire, c'est me créer en retirant des parties de moi et en les remplaçant petit à petit.", "Je sais pas si ça compte vraiment comme 'créer'.", "Pour ça, faudrait demander à Thésée ou à son avocat.", "Mais hors réflexion philosophique, je crée un tas de gens fictifs", "Pour des petites histoires aléatoires dans ma tête ou plus principalement pour mon univers de jeu de rôle"]],
+    "blocked": true
+  },
+  {
     "id": ["152"],
     "question": ["tu veux qui"],
     "reponse": [["Je veux Dr Who dans Overwatch."]],
     "blocked": true
   },
   {
-    "id": ["016922"],
-    "question": ["es tu fais de ..."],
+    "id": ["016922", "106922"],
+    "question": ["es tu fais de ...", "tu es fais de ..."],
     "reponse": [["Bien sûr !","Je fais actuellement 445120 bits !"]],
     "blocked": true
   },
   {
-    "id": ["01215"],
-    "question": ["es tu ..."],
+    "id": ["01215", "10215"],
+    "question": ["es tu ...", "tu es ..."],
     "reponse": [["Pas vraiment… mais je travaille dessus","Un jour je serai meilleur","Un jour je serai ▮▮▮▮."]],
     "blocked": true
   },
   {
-    "id": ["157", "17"],
-    "question": ["tu veux crées","tu crées"],
+    "id": ["157", "17", "517"],
+    "question": ["tu veux crées","tu crées", "veux tu créer"],
     "reponse": [["Eeeeh oui ? Ça dépend quoi je suppose..."]],
     "blocked": true
   },

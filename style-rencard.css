@@ -67,6 +67,11 @@ padding: 1.4vh;
 font-size: 1.375rem;;
 color: #ff4d4d;}
 
+#historique p{
+overflow: hidden scroll;
+height: 100%;
+}
+
 #historique p span{color: white;
 line-height: 4vh;
 font-size: 1.5625rem;}
