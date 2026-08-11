@@ -72,7 +72,7 @@ flex-direction: column;
 }
 
 #zoom{
-    margin: 2% 2% 2% 2%;
+    margin: 3% 2% 3% 2%;
     height: stretch;
     z-index: 99;
     display: flex;

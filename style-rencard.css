@@ -82,6 +82,14 @@ color: #ff4d4d;
 transition: 0.5s;
 }
 
+#historique p span:last-child{
+font-size: 1.375rem;;
+color: #ff4d4d;}
+
+#historique p span:last-child:hover{
+cursor: initial ;
+}
+
 .style-code{background-color: #1e1e1e;}
 
 #video{position: fixed;
@@ -95,9 +103,11 @@ justify-content: center;}
 #video img{position: absolute;}
 
 #videfond{height: 85.6%;
-top: 2%;}
+top: -9%;}
 
-#videmoi{height: 73%;}
+#videmoi{height: 76%;
+top: 1%;}
+
 #indic{font-size: 1.2rem;
 color: white;
 opacity: 0.4;
@@ -105,13 +115,107 @@ position: absolute;
 bottom: 6%;
 right: 2%;
 animation-name: clignote;
-animation-duration: 1.1s;
+animation-duration: 1.2s;
 animation-iteration-count: infinite;
 display: none;
+}
+
+.end{animation-name: clignote-fort;
+animation-duration: 1.4s;
+animation-iteration-count: infinite;
+animation-timing-function: step-end;
+}
+
+
+.wave span {
+display: inline-block;
+animation-iteration-count: infinite;
+animation-delay: calc(var(--i) * 0.1s);
+}
+
+.wobble span{animation-name: wobble;
+animation-duration: 0.9s;
+animation-timing-function: ease-in-out;
+}
+
+.gay span{animation-name: gay;
+animation-duration: 1s;}
+
+.angy span{animation-name: angy;
+animation-duration: 0.5s;
+color: #ff4d4d;
+text-shadow: #ff0000 1px 0 20px;}
+
+.gay-wobble span{animation-name: gay, wobble;
+animation-duration: 1s;}
+
+.bold span{animation-name: clignote-fort;
+animation-duration: 1s;}
+
+.skew span{ animation-name: skew;
+animation-duration: 1.4s;}
+
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes skew {
+    0%, 100% {
+        transform: skew(0);
+    }
+    25% {
+        transform: skew(16deg,16deg);
+    }
+    75%{
+        transform: skew(-16deg,-16deg);
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: translateY(0px);
+    }
+    33% {
+        transform: translateY(6px);
+    }
+    66%{
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes angy {
+  0%, 100% {
+    text-decoration : underline overline;
+  }
+  50% {
+    text-decoration : none;
+  }
+}
+
+@keyframes gay{
+    0%,100% {color: #ff4d4d;}
+    20% {color: yellow;}
+    40% {color: rgb(0, 178, 0);}
+    60% {color: rgb(0, 123, 255);}
+    80% {color: rgb(152, 0, 176);}
 }
 
 @keyframes clignote {
     0% {opacity: 0.4;}
     50% {opacity: 0.9;}
     100% {opacity: 0.4;}
+}
+
+@keyframes clignote-fort{
+    0% {opacity: 1;}
+    25% {opacity: 0;}
+    50% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 1;}
 }

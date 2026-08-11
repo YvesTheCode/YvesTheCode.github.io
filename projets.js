@@ -109,9 +109,8 @@ function goround() {
 
 
    if (index === (projets.length) -1) {
-        console.log("Tu t'es endormis ?")
-        index = -1
-        
+        yapbox.innerHTML = "Tu t'es endormis ?"
+        index = -1 
     }
 
     index++
@@ -139,7 +138,7 @@ let pro = document.querySelectorAll(".projet")
 
 pro.forEach(c => c.addEventListener("click", () => {
     sessionStorage.removeItem("memory");
-//   alert(c.id)
+
     if(c.id==="carousel"){
         sessionStorage.setItem("memory",bonrandom[index])
     }

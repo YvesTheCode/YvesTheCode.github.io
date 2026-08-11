@@ -11,10 +11,6 @@ goprojet.addEventListener('click', function() {
 
 })
 
-// goprojet.addEventListener('mouseenter',function(){
-//     textbox.textContent = "pet"
-// })
-
 
 gorecent.addEventListener('click', function() {
     sessionStorage.removeItem("memory");

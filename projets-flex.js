@@ -1,5 +1,4 @@
 let memory = sessionStorage.getItem('memory')
-// alert(memory) 
 let main = document.querySelector(".main")
 let minus = document.getElementById("minus")
 let plus = document.getElementById("plus")
@@ -37,7 +36,7 @@ let projetsTextes = [
 
   "Ce projet est mon TFE à l'INRACI, je devais inventer une collaboration entre un musicien, un artiste de mode au choix, et faire un tas de merch et autres objets promotionnels. L'identité visuelle que j'ai créée est un mélange d'image, de dessin papier scanné et de lyrics collés ensemble pour créer un tout punk et décalé représentant bien l'univers des deux artistes que j'ai choisis. Je suis très fier du résultat final et content d'avoir eu la note maximale en allant à l'encontre de tous les principes de base du design avec mon approche plus brutaliste. J'ai pu faire les choses à ma manière avec ce projet et ça a payé !",
 
-  "Voilà tous les micro-projets et autres trucs cool que j'ai faits qui ne méritent pas d'avoir leur propre page (techniquement, ils mériteraient, mais je n'ai pas grand-chose à montrer).",
+  "Voilà tous les micro-projets et autres trucs cool que j'ai faits qui ne méritent pas d'avoir leur propre page. Cette page sera un peu plus souvent mise à jour pour acceuillir les plus petits trucs cools que je fais.",
 
   "J'ai créé beaucoup de choses à l'Heff qui ne méritent pas forcément leur propre page, donc voici un petit best-of !",
 
@@ -102,7 +101,6 @@ function pop(meme) {
       video.controls = true;
       video.autoplay = false;
       video.id= key
-      // video.loop = true;
 
       printspan1.innerHTML = "&lt;video&gt;";
       printspan2.innerHTML = "&lt;/video&gt;";
@@ -131,9 +129,8 @@ function pop(meme) {
 
   setTimeout(() => {
   const ro = new ResizeObserver(() => {
-    console.log("Main a changé de taille !");
-      if (main.scrollWidth > main.clientWidth) {
-      console.log("overflow");
+    //Quand main change de taille pour l'overflow
+    if (main.scrollWidth > main.clientWidth) {
       main.style.boxShadow = "15px 0 15px -10px  rgba(0, 0, 0, 0.75), -15px 0 15px -10px rgba(0, 0, 0, 0.75)"
     }
     else{
@@ -168,8 +165,6 @@ document.querySelectorAll(".zoom-img").forEach(zoom => {
     setTimeout(() => {
       zoomdiv.style.scale = 1
     }, 50);
-
-    // now = Object.keys(projet_img).indexOf(zoomchild.parentElement.id)
       
     if (zoomchild.parentElement.id in projet_img[memory]) {
       now = Object.keys(projet_img[memory]).indexOf(zoomchild.parentElement.id);
@@ -206,8 +201,6 @@ zoomdiv.addEventListener('click',function () {
           
         }
 
-        
-
         zoomimg.src = "projet-img/"+Object.values(projet_img[memory])[++now]
 
       });
@@ -243,7 +236,6 @@ plus.addEventListener('click',function () {
   sessionStorage.removeItem("memory");
   ++memory
 
-  // alert(memory)
   if (memory>=projet_img.length) {
     memory = 0
   }
@@ -258,7 +250,6 @@ minus.addEventListener('click',function () {
   sessionStorage.removeItem("memory");
   --memory
 
-  // alert(memory)
 
   if (memory<0) {
     memory = projet_img.length-1

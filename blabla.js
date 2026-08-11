@@ -59,7 +59,7 @@ function yap(blablaTxt, moigifId) {
   intervalId = setInterval(() => {
     if (index < blablaTxt.length) {
       textmemo += blablaTxt.charAt(index);
-      textbox.textContent = textmemo;
+      textbox.innerHTML = textmemo;
 
       index++;
     } else {

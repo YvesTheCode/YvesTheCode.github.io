@@ -131,7 +131,7 @@
   },
   "img_biere_yap": {
     "enter": {
-      "text": "J’ai fait la mise en page d’une étiquette de bière pour le camp scout d’un ami. (Je n’ai pas fait la super illustration centrale.)",
+      "text": "[2025] J’ai fait la mise en page d’une étiquette de bière pour le camp scout d’un ami. (Je n’ai pas fait la super illustration centrale.)",
       "moigif": "yap.gif"
     },
     "leave": {
@@ -151,7 +151,7 @@
   },
   "img_photomort_yap": {
     "enter": {
-      "text": "L’exercice était de faire des photos dans le style de Minkkinen… Bizarrement, moi sous un éboulement n’ai pas été retenu.",
+      "text": "[2022] L’exercice était de faire des photos dans le style de Minkkinen… Bizarrement, moi sous un éboulement n’ai pas été retenu.",
       "moigif": "barbiche.gif"
     },
     "leave": {
@@ -161,7 +161,7 @@
   },
   "img_leboihallo_yap": {
     "enter": {
-      "text": "Toute mascotte d’huile se doit d’avoir sa version ~spooky~ !",
+      "text": "[2022] Toute mascotte d’huile se doit d’avoir sa version ~spooky~ !",
       "moigif": "yap.gif"
     },
     "leave": {
@@ -182,7 +182,7 @@
   "video_soiree_yap": {
     "enter": {
       "text": "Ceci est de loin ma meilleure mauvaise idée que j’aie jamais eue pour un devoir coté. (J’ai eu la note maximale)",
-      "moigif": "ababravo.gif"
+      "moigif": "pouce.gif"
     },
     "leave": {
       "text": "",
