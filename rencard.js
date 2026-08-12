@@ -106,6 +106,9 @@ entre.addEventListener("click", function() {
 
   randomarray = Math.round(Math.random() * (questionTrouvee.reponse.length-1))
 
+// Précharge les images de cette réponse
+preloadAnswer(questionTrouvee, randomarray);
+
   tapetxt()
   
 
@@ -259,7 +262,7 @@ let questcool = [
     "id": ["371", "174"],
     "question": ["que crées tu", "tu crées quoi"],
     "reponse": [["Je crée des sites, des scénarios, des identités graphiques, des bandes dessinées, des logos, des affiches, des jeux de société","J'en passe et des meilleurs", "Soit pour des clients, soit juste pour le <span class='wave gay-wobble'>fun</span>."]],
-    "gifs": [[["q4_1-justoptimize.gif",3000,"q4_1stop.png"],["q3_2.gif",1200,"q3_2stop.png"],["q4_2.gif",1600,"q4_2stop.png"]]],
+    "gifs": [[["q4_1.gif",3000,"q4_1stop.png"],["q3_2.gif",1200,"q3_2stop.png"],["q4_2.gif",1600,"q4_2stop.png"]]],
     "blocked": false
   },
   {
@@ -361,6 +364,84 @@ let questcool = [
     "blocked": true
   }
 ]
+
+// Préchargement des images
+
+const imageCache = new Set();
+
+function preloadImage(filename) {
+
+    if (!filename || typeof filename !== "string") return;
+
+
+    if (!/\.(gif|png|jpg|jpeg|webp|avif)$/i.test(filename)) return;
+
+
+    if (imageCache.has(filename)) return;
+
+    imageCache.add(filename);
+
+    const img = new Image();
+
+    img.src = "img-pp/" + filename;
+}
+
+
+
+function getImagesFromAnimation(animation) {
+
+    return animation.filter(item =>
+        typeof item === "string" &&
+        /\.(gif|png|jpg|jpeg|webp|avif)$/i.test(item)
+    );
+
+}
+
+
+function preloadFirstImages() {
+
+    questcool.forEach(question => {
+
+        const reponses = question.gifs[0];
+
+        if (!reponses) return;
+
+        reponses.forEach(animation => {
+
+            const images = getImagesFromAnimation(animation);
+
+            if (images.length > 0) {
+
+                
+                preloadImage(images[0]);
+
+            }
+
+        });
+
+    });
+
+}
+
+
+function preloadAnswer(question, answerIndex) {
+
+    if (!question || !question.gifs) return;
+
+    const animation = question.gifs[0][answerIndex];
+
+    if (!animation) return;
+
+    const images = getImagesFromAnimation(animation);
+
+    images.forEach(image => {
+        preloadImage(image);
+    });
+
+}
+
+
+preloadFirstImages();
 
 function fullhistory() {
   for (let index = 0; index < questcool.length; ++index) {
