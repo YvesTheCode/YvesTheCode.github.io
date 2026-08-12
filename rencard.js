@@ -259,7 +259,7 @@ let questcool = [
     "id": ["371", "174"],
     "question": ["que crées tu", "tu crées quoi"],
     "reponse": [["Je crée des sites, des scénarios, des identités graphiques, des bandes dessinées, des logos, des affiches, des jeux de société","J'en passe et des meilleurs", "Soit pour des clients, soit juste pour le <span class='wave gay-wobble'>fun</span>."]],
-    "gifs": [[["q4_1.gif",3000,"q4_1stop.png"],["q3_2.gif",1200,"q3_2stop.png"],["q4_2.gif",1600,"q4_2stop.png"]]],
+    "gifs": [[["q4_1-justoptimize.gif",3000,"q4_1stop.png"],["q3_2.gif",1200,"q3_2stop.png"],["q4_2.gif",1600,"q4_2stop.png"]]],
     "blocked": false
   },
   {
