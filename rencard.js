@@ -126,17 +126,21 @@ let precharge = [
   "q15_1stop.png",
   "q18_3.gif",
   "q18_3stop.png",
-  "pitie_stop.png",
   "q17_1astop.png",
   "q17_1b.png",
   "q17_1stop.png",
   "rencard.png"
 ];
 
-for (let index = 0; index < precharge.length; index++) {
-  videmoi.src = "img-pp/" + precharge[index]
-  console.log(index)
-}
+let index = 0
+
+let prechargement = setInterval(() => {
+  videmoi.src = "img-pp/" + precharge[index++]
+   console.log(index)
+  if (index >= precharge.length){
+    clearInterval(prechargement)
+  }
+}, 100);
 
 function tapetxt() {
   
