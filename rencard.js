@@ -10,6 +10,9 @@ let passe = document.getElementById("dialogue")
 let videmoi = document.getElementById("videmoi")
 let indicpass = document.getElementById("indic")
 
+videmoi.src = "img-pp/q4_1.gif"
+videmoi.src = "img-pp/q1_5.gif"
+
 historique.innerHTML = sessionStorage.getItem("histHTML") || "";
 
 let questionmemo = ""
