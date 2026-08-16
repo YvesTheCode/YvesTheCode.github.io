@@ -147,7 +147,7 @@ let prechargement = setInterval(() => {
   if (index >= precharge.length){
     clearInterval(prechargement)
   }
-}, 1000);
+}, 2000);
 
 function tapetxt() {
   
