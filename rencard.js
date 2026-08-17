@@ -43,6 +43,8 @@ let precharge = [
   "q6_3.gif",
   "q18_3.gif",
   "q1_9.gif",
+  "q1_7b.gif",
+  "q7_1a.png"
 ];
 
 let index = 0
@@ -59,13 +61,17 @@ let prechargement = setInterval(() => {
       document.querySelectorAll('.minimoi').forEach(element => {
         element.src = ""
       })
-    }, 4000);
+    }, 5000);
   }
 }, 100);
 
 function tapetxt() {
   
   clearInterval(intervalId);
+  
+  passe.style.pointerEvents = "none"
+  historique.style.pointerEvents = "none"
+  entre.style.pointerEvents = "none"
 
   let texte = questionTrouvee.reponse[randomarray][memoyap];
 
@@ -104,6 +110,7 @@ function tapetxt() {
 
   indicpass.style.display = "none"
 
+
   intervalId = setInterval(() => {
     if (i < texte.length) {
       textmemo += texte.charAt(i);
@@ -113,6 +120,9 @@ function tapetxt() {
     } else {
       anitxt()
       indicpass.style.display = "block"
+      passe.style.pointerEvents = "all"
+      historique.style.pointerEvents = "all"
+      entre.style.pointerEvents = "all"
       clearInterval(intervalId);
     }
   }, 10)
