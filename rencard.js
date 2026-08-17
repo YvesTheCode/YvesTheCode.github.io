@@ -32,7 +32,6 @@ let memogif
 let ontourne
 
 let precharge = [
-
   "q1_1.gif",
   "q2_1.gif",
   "q3_1.gif",
@@ -56,6 +55,11 @@ let prechargement = setInterval(() => {
    console.log(index)
   if (index >= precharge.length){
     clearInterval(prechargement)
+    setTimeout(() => {
+      document.querySelectorAll('.minimoi').forEach(element => {
+        element.src = ""
+      })
+    }, 4000);
   }
 }, 100);
 
