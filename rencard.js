@@ -44,114 +44,20 @@ let precharge = [
   "q6_3.gif",
   "q18_3.gif",
   "q1_9.gif",
-
-  // "q1_7a.gif",
-  // "q1_4.gif",
-
-
-  // "q7_1.gif",
-  // "q1_2.gif",
-  // "q3_3.gif",
-  // "q6_1.gif",
-  // "q9_2.gif",
-  // "q9_3.gif",
-
-  // "q7_2.gif",
-  // "q1_3.gif",
-  // "q4_2.gif",
-  // "q5_2.gif",
-  // "q5_3.gif",
-  // "q7_3.gif",
-  // "q8_2c.gif",
-  // "q3_4.gif",
-  // "q6_1c.gif",
-  // "q7_10.gif",
-  // "q7_4.gif",
-  // "q8_2e.gif",
-
-  // "q1_5.gif",
-  // "q7_5.gif",
-  // "q1_6.gif",
-  // "q6_2c.gif",
-  // "q7_6.gif",
-
-
-  // "q1_7b.gif",
-  // "q7_7.gif",
-  // "q1_8a.gif",
-  // "q1_8b.gif",
-
-  // "q1_10.gif",
-  // "q1_11.gif",
-
-  // "q6_1a.png",
-  // "q6_2a.png",
-  // "q6_3a.png",
-  // "q7_1a.png",
-  // "q8_2.png",
-  // "q15_2stop.png",
-  // "q15_1stop.png",
-  // "q17_1astop.png",
-  // "q17_1b.png",
-  // "q3_4stop.png",
-  // "q1_2stop.png",
-  // "q1_3stop.png",
-  // "q1_4stop.png",
-  // "q1_5stop.png",
-  // "q1_6stop.png",
-  // "q1_9stop.png",
-  // "q1_10stop.png",
-  // "q1_11stop.png",
-  // "q1_12stop.png",
-  // "q2_1stop.png",
-  // "q3_2stop.png",
-  // "q3_1stop.png",
-  // "q3_3stop.png",
-  // "q4_1stop.png",
-  // "q4_2stop.png",
-  // "q5_1.png",
-  // "q5_2.png",
-  // "q5_3stop.png",
-  // "q6_1stop.png",
-  // "q6_1b.png",
-  // "q6_2b.png",
-  // "q6_3b.png",
-  // "q7_2stop.png",
-  // "q7_3stop.png",
-  // "q7_4stop.png",
-  // "q7_5stop.png",
-  // "q7_6stop.png",
-  // "q7_7stop.png",
-  // "q7_10stop.png",
-  // "q8_1stop.png",
-  // "q8_2a.png",
-  // "q9_2stop.png",
-  // "q9_3stop.png",
-  // "q1_1stop.png",
-  // "q6_3stop.png",
-  // "q17_1stop.png",
-  // "q18_3stop.png",
-  // "q1_7stop.png",
-  // "q1_8stop.png",
-  // "q6_3c.png",
-  // "q7_1stop.png",
-  // "q8_2b.png",
-  // "q6_1cstop.png",
-  // "q6_2stop.png",
-  // "q8_2d.png",
-  // "q8_2stop.png"
 ];
 
 let index = 0
 
 let prechargement = setInterval(() => {
-  minimoi.src = "img-pp/" + precharge[index++]
+  const prech = document.createElement('img');
+  prech.src = "img-pp/" + precharge[index++]
+  prech.classList.add("minimoi");
+  video.appendChild(prech)
    console.log(index)
   if (index >= precharge.length){
-    minimoi.src = "img-pp/rencard.png"
     clearInterval(prechargement)
   }
-}, 200);
+}, 100);
 
 function tapetxt() {
   
@@ -167,11 +73,9 @@ function tapetxt() {
     videmoi.src = "img-pp/"+ questionTrouvee.gifs[randomarray][memoyap][memogif]
         if (!questionTrouvee.gifs[randomarray][memoyap][memogif+2].replace(/\.[^/.]+$/, "").toUpperCase().endsWith("STOP")) {
           minimoi.src = "img-pp/"+ questionTrouvee.gifs[randomarray][memoyap][memogif+2]
-          console.log('couille')
         }
         else if (questionTrouvee.gifs[randomarray][memoyap][memogif+2].replace(/\.[^/.]+$/, "").toUpperCase().endsWith("STOP") && memoyap < questionTrouvee.reponse[randomarray].length - 1 && !forgor){
           minimoi.src = "img-pp/"+ questionTrouvee.gifs[randomarray][memoyap+1][0]
-          console.log('penne')
         }
         else{
           minimoi.src = "img-pp/rencard.png"
