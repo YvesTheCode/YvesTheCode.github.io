@@ -3,14 +3,29 @@ height: 52%;
 display: flex;
 justify-content: space-between;}
 
-#h1{font-size: 8rem;
+#h1{font-size: 7rem;
 color: #ff4d4d;
 display: flex;
-align-items: center;
-justify-content: center;
+flex-direction: column;
 width: 29%;
 height: 119.3%;
-text-align: center;}
+text-align: left;
+padding:1%;
+line-height: 12vh;}
+
+#h1 span {pointer-events: none;}
+
+#h1 .tag{line-height: normal;}
+
+.h2{font-size: 1.375rem;
+line-height: normal;
+color: white;}
+
+#charge{position: absolute;
+font-size: 1.375rem;
+bottom: 3%;
+left: 3%;
+line-height: normal;}
 
 #mise-a-jour{width:22% ;
 height: 119.3%;

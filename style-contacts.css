@@ -9,20 +9,20 @@ display: flex;
 flex-direction: column;}
 
 #contacts{width: 100%;
-height: fit-content;
+height: 27vh;
 padding: 1.4vh;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-gap: 22px;}
+gap: 3.75vh;}
 
 #liens-externes{width: 100%;
-height: fit-content;
+height: 27vh;
 padding: 1.4vh;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-gap: 22px;}
+gap: 3.75vh;}
 
 #coll-1 p {color: #ff4d4d;
 font-size: 1.375rem;}
