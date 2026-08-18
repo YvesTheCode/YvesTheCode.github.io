@@ -298,8 +298,8 @@ let questcool = [
   {
     "id": ["164", "361"],
     "question": ["tu fais quoi", "que fais tu"],
-    "reponse": [["Avec mes compétences, je fais toutes sortes de mises en page, comme des affiches, des flyers, tout ça tout ça", "Et je fais également des sites web que je code et designe."]],
-    "gifs": [[["q2_1.gif",2500,"q2_1stop.png"],["q3_2.gif",1700,"q3_2stop.png"]]],
+    "reponse": [["Avec mes compétences, je fais toutes sortes de mises en page, comme des affiches, des flyers, tout ça tout ça", "Et je fais également des sites web que je code et designe.", "Je donne aussi des cours en ligne où je supervise des créations de projet, un peu comme un copilote !"]],
+    "gifs": [[["q2_1.gif",2500,"q2_1stop.png"],["q3_2.gif",1700,"q3_2stop.png"],["q4_2.gif",3700,"q4_2stop.png"]]],
     "blocked": false
   },
   {

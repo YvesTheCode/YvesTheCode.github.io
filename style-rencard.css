@@ -108,9 +108,9 @@ top: -9%;}
 #videmoi{height: 76%;
 top: 1%;}
 
-#minimoi{scale: 0.1;
-z-index: 2;}
-.minimoi{scale: 0.1;}
+.minimoi{scale: 0.1;
+z-index: 0;
+opacity: 0.1;}
 
 #indic{font-size: 1.2rem;
 color: white;
