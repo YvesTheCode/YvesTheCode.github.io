@@ -5,15 +5,18 @@ justify-content: space-between;}
 
 #h1{font-size: 7rem;
 color: #ff4d4d;
+background-color: #1e1e1e;
 display: flex;
 flex-direction: column;
 width: 29%;
 height: 119.3%;
 text-align: left;
 padding:1%;
-line-height: 12vh;}
+line-height: 12vh;
+white-space: nowrap;}
 
-#h1 span {pointer-events: none;}
+#h1 span {pointer-events: none;
+white-space: initial;}
 
 #h1 .tag{line-height: normal;}
 
@@ -25,7 +28,8 @@ color: white;}
 font-size: 1.375rem;
 bottom: 3%;
 left: 3%;
-line-height: normal;}
+line-height: normal;
+transition: 0.2s;}
 
 #mise-a-jour{width:22% ;
 height: 119.3%;

@@ -61,30 +61,34 @@ let titres = [
     },
 ]
 
-let index = 0
-
-function tournetit() {
-index++
-if (index>=titres.length) {
-    index = 0
-}
-distit.innerHTML = titres[index].tit
-dissutit.innerHTML = titres[index].sutit    
-}
-
-let tournetits = setInterval(tournetit,5000);
-
 let charge = document.getElementById('charge')
 
+let index = 0
 let indexx = 0
 
-function tournecharge(params) {
-    indexx++
-    charge.innerHTML = charge.innerHTML + "▮"
-    if (indexx>4) {
+function tournetit() {
+indexx++
+charge.innerHTML = charge.innerHTML + "▮"
+  if (indexx>4) {
         charge.innerHTML = "▮"
         indexx = 0
-    }
+        index++
+          if (index>=titres.length) {
+            index = 0
+          }
+        distit.innerHTML = titres[index].tit
+        dissutit.innerHTML = titres[index].sutit
+  }  
 }
 
-let turnecharge = setInterval(tournecharge,1000)
+let tournetits = setInterval(tournetit,1000);
+
+h1.addEventListener('mouseenter',function () {
+    clearInterval(tournetits)
+    charge.style.color = "white"
+})
+
+h1.addEventListener('mouseleave',function () {
+   tournetits = setInterval(tournetit,1000);
+   charge.style.color = "#ff4d4d"
+})
