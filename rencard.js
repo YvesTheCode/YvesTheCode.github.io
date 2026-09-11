@@ -38,6 +38,7 @@ let precharge = [
   "q4_1.gif",
   "q5_1.gif",
   "q8_1.gif",
+  "9_3.gif",
   "q1_12.gif",
   "q3_2.gif",
   "q6_3.gif",
@@ -321,6 +322,13 @@ let questcool = [
     "question": ["où es tu", "tu es où"],
     "reponse": [["Dans une page web", "À l'intérieur d'un faux restaurant", "En train d'avoir un faux rencard avec je ne sais qui...", "Mais en vrai, je suis en Belgique, à Bruxelles plus précisément !"]],
     "gifs": [[["q5_1.gif",1200,"q5_1.png",5000,"q5_2.png",70,"q5_3stop.png"],["q5_2.gif",1600,"q5_2.png",5000,"q5_3stop.png"],["q5_3.gif",2000,"q5_3stop.png"],["q1_12.gif",2400,"q1_12stop.png"]]],
+    "blocked": true
+  },
+  {
+    "id": ["9801", "1098"],
+    "question": ["de où es tu", "tu es de où"],
+    "reponse": [["Je suis de Bruxelles, quasiment en dessous de l'Atomium.", "(C'est en Belgique juste à côté de Bombay si jamais)", "Et j'y suis toujours donc je cherche un job dans les alentours", "Mais je serai toujours dans mon cœur de ma petite ville de campagne où j'ai passé tous mes étés."]],
+    "gifs": [[["q9_3.gif",2600,"q9_3stop.png"],["q9_2.gif",2600,"q9_2stop.png"],["q3_2.gif",2600,"q3_2stop.png"],["q8_1.gif",3300,"q8_1stop.png"]]],
     "blocked": false
   },
   {

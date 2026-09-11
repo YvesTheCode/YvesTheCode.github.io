@@ -9,7 +9,7 @@
       "moigif": "pasbla.png"
     }
   },
-  "mise-a-jour": {
+  "mise-a-jour-hover": {
     "enter": {
       "text": "Voici ce qu'il y a de nouveau dans le site ! Un tas de choses sont encore à implémenter pour rendre le site encore plus interactif et incroyable.",
       "moigif": "erm.gif" 

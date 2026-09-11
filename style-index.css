@@ -37,7 +37,9 @@ padding: 1.4vh;}
 
 #mise-a-jour p {color: white;
 font-size: 1.375rem;
-pointer-events: none;}
+height: 100%;
+width: 100%;
+overflow-y: scroll;}
 
 .coll-3{width: 18%;
 height: 119.3%;
